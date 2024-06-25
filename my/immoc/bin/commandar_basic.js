@@ -13,7 +13,7 @@ program
 	.usage('<command> [options]')
 	.option('-e, --env', '获取环境变量', 'dev')
 	.option('-n, --Name [s]', '获取名字', 'yzh')
-	.version(pkg.version)
+	.version(pkg.version) 
 
 //直接注册命令（一级命令）
 program
