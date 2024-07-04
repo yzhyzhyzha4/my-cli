@@ -1,7 +1,6 @@
 const commander = require('commander')
-const command = require('yzh')
+const log = require('utils')
 const { program } = commander
-
 const pkg = require('../package.json')
 
 module.exports = function(args){
@@ -17,7 +16,12 @@ module.exports = function(args){
 		.option('-f, --force', '是否强制更新', false)
 		.action((name, opts) => {
 			console.log(name, opts);
+			log.info('version', pkg.version)
 		})
 
 	program.parse(process.argv)
 }
+
+process.on('uncaughtException', (e) => {
+	console.log(e.message);
+})

@@ -14,7 +14,7 @@
     "lib"
   ],
   "bin": {
-    "cli-immoc": "./bin/cli.js" 
+    "cli-immoc": "./bin/cli.js"
   },
   "publishConfig": {
     "registry": "http://registry.npm.xiaojukeji.com/"
@@ -32,6 +32,7 @@
   "dependencies": {
     "commander": "^12.1.0",
     "import-local": "^3.1.0",
-    "npmlog": "^7.0.1"
+    "npmlog": "^7.0.1",
+    "utils": "^0.0.0"
   }
 }

@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/yzhyzhyzha4/my-cli/issues"
+  },
+  "dependencies": {
+    "npmlog": "^7.0.1"
   }
 }
